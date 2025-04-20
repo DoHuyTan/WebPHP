@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fceeee;
+    margin: 0;
+    padding: 0;
+}
+
+#main-content-wp.info-account-page {
+    max-width: 960px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+#title-page h3 {
+    font-size: 24px;
+    color: #f12a43;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.section-detail form {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-detail label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.section-detail input[type="text"],
+.section-detail input[type="email"],
+.section-detail input[type="tel"],
+.section-detail textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.section-detail textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+#uploadFile {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#uploadFile input[type="file"] {
+    margin-bottom: 10px;
+}
+
+#upload-image {
+    max-width: 120px;
+    border-radius: 6px;
+    display: block;
+}
+
+.section-detail button[type="submit"] {
+    background-color: #f12a43;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.section-detail button[type="submit"]:hover {
+    background-color: #d11e36;
+}
+
+/* Responsive: bỏ sidebar nên không cần chia layout */
+@media (max-width: 768px) {
+    .wrap.clearfix {
+        flex-direction: column;
+    }
+
+    #main-content-wp.info-account-page {
+        margin: 20px;
+        padding: 20px;
+    }
+}
